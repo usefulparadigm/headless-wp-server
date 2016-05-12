@@ -1,7 +1,7 @@
 Headless WP
 =====
 
-A Simple Padrino App Demo for Headless WordPress Frontend
+A Demo Padrino App for Headless WordPress Frontend
 
 
 TODOs:
