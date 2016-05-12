@@ -1,0 +1,1 @@
+server: bundle exec padrino s -p $PORT 
