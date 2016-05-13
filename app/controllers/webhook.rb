@@ -1,8 +1,4 @@
-AppServer::App.controllers  do
-
-  get '/' do
-    render :index
-  end
+AppServer::App.controllers :webhook do
   
   # get :index, :map => '/foo/bar' do
   #   session[:foo] = 'bar'

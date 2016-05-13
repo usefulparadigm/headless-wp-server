@@ -2,12 +2,12 @@
 
 module AppServer
   class App
-    module Helper
+    module WebhookHelper
       # def simple_helper_method
       # ...
       # end
     end
 
-    helpers Helper
+    helpers WebhookHelper
   end
 end

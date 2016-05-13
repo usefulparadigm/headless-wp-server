@@ -15,7 +15,6 @@ source 'https://rubygems.org'
 
 # Project requirements
 gem 'rake'
-gem 'dotenv'
 gem 'rest-client'
 gem 'grape'
 

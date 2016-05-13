@@ -27,14 +27,11 @@
 #
 Padrino.configure_apps do
   # enable :sessions
-  set :session_secret, '1ba1b82bad40ab672a02114ef9978c087375fe600df431cea31455cd47d0eb7a'
+  set :session_secret, '7d450945ecff8fe80b068877524fe3a95f365173edde333ed33084db76507c70'
   set :protection, :except => :path_traversal
   set :protect_from_csrf, true
 end
 
 # Mounts the core application for this project
-
 Padrino.mount('AppServer::Api', :app_file => Padrino.root('api/app.rb')).to('/api')
-
-Padrino.mount('AppServer::Webhook', :app_file => Padrino.root('webhook/app.rb')).to('/webhook')
 Padrino.mount('AppServer::App', :app_file => Padrino.root('app/app.rb')).to('/')

@@ -15,10 +15,9 @@ end
 
 namespace :wp do
   desc "Sync with WordPress recent posts"
-  task :sync_recent_posts => :environment do
+  task :sync_posts => :environment do
     posts = wp.get :posts, :_embed => true
     # puts posts.count
     Post.save_to_db(posts)
   end
 end
-
