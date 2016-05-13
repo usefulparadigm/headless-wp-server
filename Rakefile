@@ -7,6 +7,7 @@ PadrinoTasks.init
 
 task :default => :test
 
+# Your WordPress Site URL
 WP_SITE = "http://localhost:8080/"
 
 def wp
